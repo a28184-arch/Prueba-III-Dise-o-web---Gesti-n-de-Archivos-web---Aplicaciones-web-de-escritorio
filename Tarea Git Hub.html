@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jornada Tecnológica San Valero 2026</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" 
+        rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
+        crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <style>
+    :root {
+      --primary: #0d6efd;
+      --dark: #0d1b2a;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: #212529;
+    }
+
+    .navbar {
+      background-color: var(--dark) !important;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    }
+
+    .navbar-brand img {
+      height: 38px;
+    }
+
+    .hero {
+      background: linear-gradient(rgba(13,27,42,0.78), rgba(13,27,42,0.78)),
+                  url('San Valero Ordenadores.jpg') center/cover no-repeat;
+      color: white;
+      min-height: 70vh;
+      padding-top: 120px;
+      padding-bottom: 80px;
+    }
+
+    .section-title {
+      position: relative;
+      margin-bottom: 2.5rem;
+      font-weight: 600;
+    }
+
+    .section-title::after {
+      content: '';
+      width: 70px;
+      height: 4px;
+      background-color: var(--primary);
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 2px;
+    }
+
+    .card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+      border: none;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+    }
+
+    .speaker-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 4px solid white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: var(--dark);
+      color: #adb5bd;
+      padding: 3rem 0 1.5rem;
+    }
+
+    .btn-primary {
+      padding: 0.65rem 1.8rem;
+      font-weight: 500;
+    }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <!-- Logo oficial aproximado (puedes reemplazar por el real de sanvalero.es) -->
+      <img src="https://www.sanvalero.es/sites/default/files/logo-300x280.png" alt="Logo Centro San Valero" class="me-2">
+      <span>Jornada Tecnológica 2026</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programa">Programa</a></li>
+        <li class="nav-item"><a class="nav-link" href="#ponentes">Ponentes</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inscripcion">Inscripción</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section id="inicio" class="hero text-center text-white">
+  <div class="container">
+    <h1 class="display-3 fw-bold mb-3">Jornada Tecnológica San Valero 2026</h1>
+    <p class="lead fs-4 mb-4">Innovación • Inteligencia Artificial • Ciberseguridad • Transformación Digital</p>
+    
+    <div class="d-flex justify-content-center gap-4 flex-wrap mb-4">
+      <div><i class="bi bi-calendar-event me-2"></i>12 de marzo de 2026</div>
+      <div><i class="bi bi-geo-alt-fill me-2"></i>Centro San Valero – Calle Violeta Parra, 9, 50015 Zaragoza</div>
+    </div>
+
+    <a href="#inscripcion" class="btn btn-primary btn-lg px-5 shadow">Inscribirme gratis</a>
+  </div>
+</section>
+
+<section id="programa" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center">Programa de la Jornada</h2>
+
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-robot display-4 text-primary mb-3"></i>
+            <h5 class="card-title">9:30 – 11:00</h5>
+            <p class="card-text fw-bold">IA Generativa: Del concepto a la realidad empresarial</p>
+            <p class="text-muted small">Aplicaciones prácticas en Aragón 2026</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-shield-lock display-4 text-danger mb-3"></i>
+            <h5 class="card-title">11:15 – 12:45</h5>
+            <p class="card-text fw-bold">Ciberseguridad en la era post-cuántica</p>
+            <p class="text-muted small">Amenazas reales y cómo protegerse</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-cloud-arrow-up display-4 text-success mb-3"></i>
+            <h5 class="card-title">13:00 – 14:30</h5>
+            <p class="card-text fw-bold">Edge Computing e Industria 5.0</p>
+            <p class="text-muted small">Casos de éxito en empresas locales</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-people display-4 text-warning mb-3"></i>
+            <h5 class="card-title">15:30 – 17:00</h5>
+            <p class="card-text fw-bold">Mesa redonda: Talento tecnológico en Aragón</p>
+            <p class="text-muted small">Empresas, centros y egresados dialogan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100">
+          <div class="card-body text-center">
+            <i class="bi bi-lightbulb display-4 text-info mb-3"></i>
+            <h5 class="card-title">17:15 – 18:45</h5>
+            <p class="card-text fw-bold">Talleres prácticos simultáneos</p>
+            <p class="text-muted small">Prompt engineering • Ethical hacking • Low-code</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="ponentes" class="py-5">
+  <div class="container">
+    <h2 class="section-title text-center">Ponentes destacados</h2>
+
+    <div class="row g-4 text-center">
+      <div class="col-md-6 col-lg-3">
+        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800" alt="Ponente 1" class="speaker-img mb-3">
+        <h5>Dr. Elena Martínez</h5>
+        <p class="text-muted">Directora de IA Ética – Universidad de Zaragoza</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?auto=format&fit=crop&q=80&w=800" alt="Ponente 2" class="speaker-img mb-3">
+        <h5>Ing. Marcos Ruiz</h5>
+        <p class="text-muted">Especialista en Ciberseguridad – Deloitte</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&q=80&w=800" alt="Ponente 3" class="speaker-img mb-3">
+        <h5>Ana Beltrán</h5>
+        <p class="text-muted">Arquitecta Cloud – AWS Community Hero</p>
+      </div>
+
+      <div class="col-md-6 col-lg-3">
+        <img src="https://images.unsplash.com/photo-1556155092-490a1ba16284?auto=format&fit=crop&q=80&w=800" alt="Ponente 4" class="speaker-img mb-3">
+        <h5>Javier Torres</h5>
+        <p class="text-muted">CTO – Empresa tecnológica aragonesa</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="inscripcion" class="py-5 bg-primary text-white text-center">
+  <div class="container">
+    <h2 class="mb-4">Inscríbete ahora – ¡Plazas limitadas!</h2>
+    <p class="lead mb-4">La asistencia es gratuita, pero el aforo es reducido.</p>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-6">
+        <form class="bg-white text-dark p-4 rounded shadow">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Nombre completo" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Correo electrónico" required>
+          </div>
+          <div class="mb-3">
+            <select class="form-select">
+              <option selected>¿En qué taller te gustaría participar?</option>
+              <option>IA Generativa</option>
+              <option>Ciberseguridad</option>
+              <option>Cloud & Edge</option>
+              <option>Otro (indicar en comentarios)</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="3" placeholder="Comentarios o necesidades especiales..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-dark btn-lg w-100">Enviar inscripción</button>
+        </form>
+      </div>
+    </div>
+
+    <p class="mt-4">o escribe directamente a: <strong>jornada2026@svalero.com</strong></p>
+  </div>
+</section>
+
+<footer class="text-center">
+  <div class="container">
+    <div class="mb-3">
+      <a href="#" class="text-white me-4 fs-4"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="text-white me-4 fs-4"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-white me-4 fs-4"><i class="bi bi-instagram"></i></a>
+      <a href="https://www.sanvalero.es" class="text-white fs-4"><i class="bi bi-globe"></i></a>
+    </div>
+    <p class="mb-1">Centro San Valero • Calle Violeta Parra, 9 • 50015 Zaragoza</p>
+    <p class="mb-0 small">© 2026 Centro San Valero – Obra Diocesana. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap 5 JS (necesario para navbar responsive, tooltips, etc.) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" 
+        crossorigin="anonymous"></script>
+
+</body>
+</html>
