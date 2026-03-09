@@ -1,5 +1,5 @@
 # Jornada Tecnológica San Valero 2026
-Descripción del proyecto
+## Descripción del proyecto
 Página web pa la jornada tecnológica del Centro San Valero que se celebra el 12 de marzo de 2026. Está hecha con Bootstrap 5 pa que quede chula y se vea bien en móviles y ordenadores. Tiene toa la info del evento: programa, ponentes y formulario pa apuntarse.
 
 Secciones y columnas de Bootstrap
